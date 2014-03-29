@@ -9,11 +9,3 @@ Options -Indexes
 
 RewriteEngine On
 RewriteRule ^.git(ignore|/) - [F,L]
-
-AuthUserFile /srv/http/.htpasswd
-AuthType Basic
-AuthName "CollectD Graph Panel"
-Require valid-user
-Order allow,deny
-Allow from 192.168.1.0/24
-satisfy any
