@@ -43,7 +43,7 @@ $CONFIG['term'] = array(
 $CONFIG['network_datasize'] = 'bytes';
 
 # "png", "svg", "canvas" or "hybrid" (canvas on detail page, png on the others) graphs
-$CONFIG['graph_type'] = 'png';
+$CONFIG['graph_type'] = 'hybrid';
 
 # For canvas graphs, use 'async' or 'sync' fetch method
 $CONFIG['rrd_fetch_method'] = 'sync';
@@ -52,7 +52,7 @@ $CONFIG['rrd_fetch_method'] = 'sync';
 $CONFIG['negative_io'] = false;
 
 # create smooth graphs (rrdtool -E)
-$CONFIG['graph_smooth'] = false;
+$CONFIG['graph_smooth'] = true;
 
 # browser cache time for the graphs (in seconds)
 $CONFIG['cache'] = 90;
@@ -61,11 +61,11 @@ $CONFIG['cache'] = 90;
 $CONFIG['page_refresh'] = '';
 
 # default width/height of the graphs
-$CONFIG['width'] = 400;
-$CONFIG['height'] = 175;
+$CONFIG['width'] = 600;
+$CONFIG['height'] = 250;
 # default width/height of detailed graphs
-$CONFIG['detail-width'] = 800;
-$CONFIG['detail-height'] = 350;
+$CONFIG['detail-width'] = 1400;
+$CONFIG['detail-height'] = 550;
 # max width/height of a graph (to prevent from OOM)
 $CONFIG['max-width'] = $CONFIG['detail-width'] * 2;
 $CONFIG['max-height'] = $CONFIG['detail-height'] * 2;
